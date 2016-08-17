@@ -1,0 +1,115 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Consumer_Sanity_Suite">
+	<parameter name="buildType" value="sanitySuiteProduction" />
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="utility.TestListener" />
+		<listener class-name="utility.RetryListener" />
+	</listeners>
+	
+	
+	<test name="QuicktourScenarios">
+		<classes>
+			<class name="functionalScenarios.QuickTourScenarios" />
+		</classes>
+	</test>
+	
+	<test name="HomeScenarios">
+		<classes>
+			<class name="functionalScenarios.HomeScenarios" />
+		</classes>
+	</test>
+	
+	 <test name="WarrantyScenarios">
+		<classes>
+			<class name="functionalScenarios.WarrantyScenarios" />
+		</classes>
+	</test>
+	  
+
+	 <test name="CartScenarios">
+		<classes>
+			<class name="functionalScenarios.CartScenarios" />
+		</classes>
+	</test>
+	
+	 <test name="SearchScenarios">
+		<classes>
+			<class name="functionalScenarios.SearchScenarios" />
+		</classes>
+	</test>
+	
+	 <test name="DrawerScenarios">
+		<classes>
+			<class name="functionalScenarios.NavigationDrawerScenarios" />
+		</classes>
+	</test>
+	
+	 <test name="OverflowMenuScenario">
+		<classes>
+			<class name="functionalScenarios.OverflowMenuScenarios" />
+		</classes>
+	</test>
+	
+	  <test name="MyAccountScenarios">
+		<classes>
+			<class name="functionalScenarios.MyAccountScenario" />
+		</classes>
+	</test> 
+	
+	<test name="LocationScenarios">
+		<classes>
+			<class name="functionalScenarios.LocationScenarios" />
+		</classes>
+	</test> 
+	
+	<test name="ProductDetailsScenarios">
+		<classes>
+			<class name="functionalScenarios.ProductDetailsScenarios" />
+		</classes>
+	</test> 
+	
+	<!-- <test name="LFRScenarios">
+		<classes>
+			<class name="Functional_Scenarios.LFRScenarios" />
+		</classes>
+	</test> -->
+  
+	<!-- <test name="PlacingOrderScenarios">
+		<classes>
+			<class name="Functional_Scenarios.PlacingOrderScenarios" />
+		</classes>
+	</test>
+
+	<test name="DownloadFromPlayStore">
+		<classes>
+			<class name="Functional_Scenarios.DownloadFromPlayStore" />
+		</classes>
+	</test>
+  -->
+	
+		
+	 <!--  <test name="OTP Scenarios">
+		<classes>
+			<class name="Functional_Scenarios.OTP_Scenarios" />
+		</classes>
+	</test> --> 
+<!-- 
+	<test name="BrandedStores Scenarios">
+		<classes>
+			<class name="Functional_Scenarios.BrandedStoresScenarios" />
+		</classes>
+	</test>  -->
+	
+<!-- 
+	<test name="Personalization scenarios">
+		<classes>
+			<class name="Functional_Scenarios.PersonalizationEventsScenarios" />
+		</classes> 
+		
+	</test> --> 
+	
+</suite>
+
